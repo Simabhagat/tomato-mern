@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-wrapper{
+    @apply flex flex-row gap-4 h-[80px] items-center;
+    background-color: rgb(63 206 169 / 92%);
+}
+
+.link-text{
+    @apply text-white;
+    
+}
+
+.brand{
+    @apply text-3xl font-bungee pl-4;
+    font-style: italic;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.859);
+}
+
+.card-wrapper{
+    @apply flex flex-col gap-2 max-w-[360px] border-gray-600 text-white ;
+    width: 16rem;
+    border-width: 1px;
+
+}
+
+.login-button {
+    @apply shadow-[0_4px_6px_rgba(59,130,246,0.5)]; /* Blue shadow */
+    @apply bg-blue-600 text-white py-2 px-6 rounded-md transition ease-in-out duration-300;
+    @apply hover:bg-white/90 hover:text-blue-600 hover:ring-blue-500 hover:ring-1;
+}
+
+.logout-button {
+    @apply shadow-[0_4px_6px_rgba(255,0,0,0.5)]; /* red shadow */
+    @apply bg-red-600 text-white py-2 px-6 rounded-md transition ease-in-out duration-300;
+    @apply hover:bg-red-500 hover:text-white hover:ring-red-500 hover:ring-1;
+}
+
+.myCart-button {
+    @apply shadow-[0_4px_6px_rgba(255,0,0,0.5)]; /* red shadow */
+    @apply bg-orange-400 text-white py-2 px-6 rounded-md transition ease-in-out duration-300;
+    @apply hover:bg-orange-300 hover:text-white hover:ring-orange-500 hover:ring-1;
+}
+
+.signUp-button{
+    @apply shadow-sm;
+    @apply bg-gray-100 py-2 px-6 rounded-md transition-colors ease-in-out duration-300;
+    @apply hover:bg-blue-600 hover:text-white hover:shadow-[0_4px_6px_rgba(59,130,246,0.5)]
+}
+
+.checkout-button {
+    @apply shadow-[0_4px_6px_rgba(0,255,0,0.5)]; /* red shadow */
+    @apply bg-green-400 text-white py-2 px-6 rounded-md transition ease-in-out duration-300;
+    @apply hover:text-white hover:ring-green-500 hover:ring-1 hover:scale-105;
+}
+
+.form-wrapper{
+    @apply flex flex-col items-center justify-center p-4 text-white w-full
+}
+
+
+.input{
+    @apply text-white !important;
+}
+
+
